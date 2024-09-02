@@ -14,10 +14,10 @@ public class Application {
 //        c.testIfElseIfStatement();
 //        c.improveNestedIfElseIfStatement();
 //        c.testNestedIfElseIfStatement();
-        WookEx f = new WookEx();
-//        d.test();
+
         D_switch d = new D_switch();
 //        d.testSwitchStatement();
-        d.testSwitchVendingMachine();
+//        d.testSwitchVendingMachine();
+
     }
 }
