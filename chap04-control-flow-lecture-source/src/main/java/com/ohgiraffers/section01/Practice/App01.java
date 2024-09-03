@@ -1,6 +1,7 @@
 package com.ohgiraffers.section01.Practice;
 
 import java.lang.invoke.SwitchPoint;
+import java.sql.SQLOutput;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -129,25 +130,8 @@ public class App01 {
         System.out.println("종료되었습니다.");
     }
     public void practice07() {
-        /* 람쥐는 축제 부스에서 일한 뒤, 인사평가 점수를 받았습니다.
-         *
-         * 성실, 서비스, 미소 점수를 입력받아
-         * 평균 점수가 60점 이상이면서 각 항목이 40점 이상인 조건이 만족하면 "합격입니다!" 를 출력하세요,
-         *
-         * 단, 합격이 아닌 경우 불합격 사유가 무엇인지를 모두 출력해 주어야 합니다.
-         * 평균점수 미달인 경우 "평균점수 미달로 불합격입니다."라고 출력하고,
-         * 항목당 과락 점수가 있는 경우 "xx 항목의 점수 미달로 불합격 입니다."를 출력하세요.
-         *
-         * -- 입력 예시 --
-         * 성실 점수 : 60
-         * 서비스 점수 : 30
-         * 미소 점수 : 20
-         *
-         * -- 출력 예시 --
-         * 평균 점수 미달로 불합격입니다.
-         * 서비스 점수 미달로 불합격입니다.
-         * 미소 점수 미달로 불합격입니다.
-         * */
+
+        // 문제 07
         Scanner sc = new Scanner(System.in);
         System.out.println("성실 점수를 입력하세요 : ");
         int a = sc.nextInt();
@@ -180,4 +164,84 @@ public class App01 {
 
     }
 
+    public void practice08() {
+        // 문제 08-1
+        Scanner sc = new Scanner(System.in);
+        System.out.print("나이를 입력하세요 : ");
+        int age = sc.nextInt();
+        System.out.print("키를 입력하세요 : ");
+        int height = sc.nextInt();
+
+
+        if (age >= 9 && height >= 110) {
+            System.out.println("놀이기구 탑승 가능합니다.");
+        } else if (age <= 9) {
+            System.out.println("9살 넘으면 오시오.");
+        } else if (height <= 110) {
+            System.out.println("키 더 크고 오시오.");
+        }
+    }
+
+    public void practice09() {
+        /*Q2. 두 과목의 평균이 60점 이상이면 합격
+	    한 과목이라도 40점미만이면 불합격*/
+        Scanner sc = new Scanner(System.in);
+        int subject01 = sc.nextInt();
+        System.out.print("과목1 : ");
+        int subject02 = sc.nextInt();
+        System.out.print("과목2 : ");
+
+        int average = subject01 + subject02;
+
+        if (average >= 60 && subject01 > 40 && subject02 > 40) {
+            System.out.println("합격입니다!");
+        } else {
+            System.out.println("불합격입니다.");
+        }
+
+    }
+
+    public void star01() {
+
+        System.out.print("정수를 입력하세요 : ");
+        Scanner sc = new Scanner(System.in);
+        int st = sc.nextInt();
+
+        for (int i = 1; i <= st; i++) {
+            System.out.println();
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+
+        }
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+	/*Q3. 1일간 차를 렌트하려고 하는데 차종에 따른 렌트비를 출력해보자(switch)
+	소형 : 40000원
+	중형 : 55000원
+	대형 : 80000원
+	SUV : 100000원
+	승합 : 120000원
+	- 추가 : Scanner 를 사용해서 내가 가지고 있는 예산을 입력해서
+	- 추천 하는 방식으로 해도 좋다.*/
+
+	/*Q4. Scanner 로 1 ~ 12 사이의 정수를 입력 받아 입력 한 정수에 해당하는
+		  계절의 정보를 출력하시오.
+		  추가적으로 겨울과 여름의 경우 온도를 입력받아
+		  겨울에 경우 -15 도 이하이면 한파경보
+		  -5 ~ -14 이면 한파 주의보
+		  여름의 경우 33도 이상이면 폭염경보,
+		  28 ~ 33 이면 폭염주의보 를 출력하시오*/
 }
