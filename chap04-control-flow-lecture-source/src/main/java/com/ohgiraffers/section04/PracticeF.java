@@ -119,24 +119,22 @@ public class PracticeF {
          * 정답입니다. 3회만에 정답을 맞추셨습니다.
          * */
 
+        int random = (int)(Math.random() * 100) + 1;
+        System.out.println("1부터 100까지의 난수 : " + random);
 
-        System.out.print("정수를 입력하세요 : ");
         Scanner sc = new Scanner(System.in);
+        System.out.print("정수를 입력하세요 : ");
         int num = sc.nextInt();
-        int random = (int)(Math.random()*10);
 
         int trynum = 0;
 
-        for () {
-        }
-
-
         if (num < random) {
-            System.out.println("입력하신 정수보다 작습니다.");
-        } else if (num > random) {
             System.out.println("입력하신 정수보다 큽니다.");
+        } else if (num > random) {
+            System.out.println("입력하신 정수보다 작습니다.");
+        } else if (num == random) {
+            System.out.println("정답입니다. " + trynum + "회 만에 정답을 맞추셨습니다.");
         }
-
 
 
     }
@@ -170,3 +168,21 @@ public class PracticeF {
          * */
     }
 }
+
+
+//System.out.print("정수를 입력하세요 : ");
+//Scanner sc = new Scanner(System.in);
+//int num = sc.nextInt();
+//int random = (int)(Math.random()*10);
+//
+//int trynum = 0;
+//
+//        for () {
+//                }
+//
+//
+//                if (num < random) {
+//        System.out.println("입력하신 정수보다 작습니다.");
+//        } else if (num > random) {
+//        System.out.println("입력하신 정수보다 큽니다.");
+//        }
