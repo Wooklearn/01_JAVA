@@ -1,4 +1,4 @@
-package com.ohgiraffers.section01.section02;
+package com.ohgiraffers.practice.practice;
 
 public class Application01 {
     public static void main(String[] args) {
@@ -26,11 +26,19 @@ public class Application01 {
         // 문제 12
 //        app.practice12();
         // 문제 13
-        app.practice13();
-
-
-
-
+//        app.practice13();
+        // 문제 14
+//        app.practice14();
+        // 문제 15
+//        app.practice15();
+        // 문제 16
+//        app.practice16();
+        // 문제 17
+//        app.practice17();
+        // 문제 18
+//        app.practice18();
+        // 문제 19
+        app.practice19();
 
 
     }
