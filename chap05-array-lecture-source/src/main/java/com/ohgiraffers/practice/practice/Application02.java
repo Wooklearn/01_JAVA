@@ -447,13 +447,51 @@ public class Application02 {
             }
         }
         System.out.println("입력하신 문자열 " + st + "에서 찾으시는 문자 " + cs + "는" + count + "입니다.");
+    }
+    public void practice20() {
+        // 반복문 01
+        int sum = 0;
 
+        for (int i = 1; i <= 10; i++) {
 
+            sum += i;
+
+        }
+        System.out.println("1부터 10까지의 합은 : " + sum + "입니다.");
+    }
+
+    public void practice21() {
+        // 반복문 02
+        Scanner sc = new Scanner(System.in);
+        System.out.print("정수 한개를 입력해주세요 : ");
+        int num = sc.nextInt();
+
+        int sum = 0;
+
+        for (int i = 1; i <= num; i++) {
+
+            sum += i;
+
+        }
+        System.out.println("입력한 값까지의 합은 : " + sum );
+    }
+
+    public void practice22() {
+        /* 1부터 입력 받은 정수까지의 짝수의 합을 출력하세요.
+         *
+         * -- 입력 예시 --
+         * 정수를 입력하세요 : 10
+         *
+         * -- 출력 예시 --
+         * 1부터 10까지 짝수의 합 : 30
+         * */
 
 
 
 
     }
+
+
 
 }
 
