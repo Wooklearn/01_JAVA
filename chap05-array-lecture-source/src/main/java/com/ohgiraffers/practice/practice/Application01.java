@@ -44,7 +44,11 @@ public class Application01 {
         // 문제 21
 //        app.practice21();
         // 문제 22
-
+//        app.practice22();
+        // 문제 23
+//        app.practice23();
+        // 문제 24
+        app.practice24();
 
     }
 }
