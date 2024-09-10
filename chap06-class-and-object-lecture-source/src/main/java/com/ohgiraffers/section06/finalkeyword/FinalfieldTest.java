@@ -58,4 +58,5 @@ public class FinalfieldTest {
         static {
             STATIC_DOUBLE = 0.5;
         }
+    }
 }
