@@ -22,7 +22,7 @@ public class Application {
             System.out.println("1. 회원등록");
             System.out.println("2. 회원 전체 조회");
             System.out.println("9. 프로그램 종료");
-            System.out.println("메뉴 선택 : ");
+            System.out.print("메뉴 선택 : ");
             int no = sc.nextInt();
 
             switch (no) {

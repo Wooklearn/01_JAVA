@@ -81,9 +81,5 @@ public class Application {
         FarmCar farmCar = new FarmCar();
         farmCar.soundHorn();
         farmCar.run();
-
-
-
-
     }
 }
