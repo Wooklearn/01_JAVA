@@ -1,3 +1,6 @@
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Application {
@@ -20,7 +23,7 @@ public class Application {
             switch (num) {
                 case 1:
                     //작물 선택하는 기능
-                    Crops crops = new Crops();
+                    Crops.selectCrop(sc);
                     System.out.println("1. 작물을 선택하십시오.");
                     break;
                 case 2:
@@ -40,7 +43,7 @@ public class Application {
                     System.out.println("잘못 누르셨습니다. 다시 입력해주세요.");
                     return;
             }
-            System.out.println("=========================================");
+            System.out.println("============================================================================================");
         }
     }
 }

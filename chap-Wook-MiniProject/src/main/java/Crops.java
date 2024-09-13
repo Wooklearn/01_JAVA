@@ -1,31 +1,27 @@
+import org.w3c.dom.ls.LSOutput;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+private static List<String> crops = new ArrayList<>();
+
 public class Crops {
 
-    private String name;    // 작물 이름
-    private int price;   // 작물 가격
-
-    // 작물 이름과 가격을 저장
-    private void crops(String name, int price) {
-        this.name = name;
-        this.price = price;
-
-        Crops[] crops = {"쌀", "옥수수", "수박", "콩", "코코넛"};
-        crops[0] = "쌀";
-        crops[1] = "옥수수";
-        crops[2] = "수박";
-        crops[3] = "콩";
-        crops[4] = "코코넛";
-
-
-        for (int i = 0; i < crops.length; i++) {
-
-            System.out.println(crops[i]);
-
+    public static void selectCrop(Scanner sc) {
+        System.out.println("작물을 선택하세요.");
+        for (int i = 0; i < crops.size(); i++) {
+            System.out.println((i + 1) + ". " + crops.get(i));
         }
+        System.out.println("작물 번호를 입력하세요.");
+        int cropChoice = sc.nextInt();
 
+        if (cropChoice >= 1 && cropChoice <= crops.size()) {
+            selectCrop = crops.get(cropChoice - 1);
+            System.out.println("선택한 작물 : " + selectCrop);
+        } else {
+            System.out.println("잘못된 선택입니다. 다시시도하세요.");
+        }
     }
+
 }
-//Crop[] crops = {
-//        new Crop("당근", 20),
-//        new Crop("옥수수", 15),
-//        new Crop("토마토", 25)
-//};
+
