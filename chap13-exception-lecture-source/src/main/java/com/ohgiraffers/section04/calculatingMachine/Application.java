@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Application {
 
-    public static void main(String[] args) throws DivideNotZeroException {
+    public static void main(String[] args) {
 
 //        프로젝트 소개
 //        사칙연산을 수행하는 계산기 (+, -, *, /, %)
