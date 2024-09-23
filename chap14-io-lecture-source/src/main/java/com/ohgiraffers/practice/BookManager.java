@@ -23,19 +23,22 @@ public class BookManager {
 
     // 기본생성자
     public BookManager() {
-
     }
+
+    // 새 도서 추가
     public void addBook(BookDTO bookDTO) {
 
         booklist.add(bookDTO);
+        System.out.println("도서가 추가되었습니다." + bookDTO);
 
     }
+
+    // 도서 삭제
     public void deleteBook() {
 
-        // 도서 삭제
-
 
     }
+
     public void searchBook() {
 
     }
@@ -48,8 +51,8 @@ public class BookManager {
                 System.out.println(bookDTO);
             }
         }
-
     }
+
     public List<BookDTO> sortedBookList = new ArrayList<>();
     public void printBookList () {
 

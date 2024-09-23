@@ -6,27 +6,17 @@ import java.util.Scanner;
 
 public class BookMenu {
 
-//- sc : Scanner
-//- bm : BookManager
-//+ BookMenu()
-//+ mainMenu() : void
-//+ inputBook() : BookDTO
-//+ inputBookNo() : String
-//+ inputBookTitle() : String
-//+ selectSortedBook():List<BookDTO>
-
     Scanner sc = new Scanner(System.in);
     BookManager bm = new BookManager();
-
 
     // 기본 생성자
     public BookMenu () {
         System.out.println("====== 도서관리 프로그램 ======");
-
     }
 
     // 도서관리 프로그램
     public void mainMenu() {
+
 //        1. 새 도서 추가 // addBook (inputBook()이 리턴한 객체) 실행
 //        2. 도서정보 정렬 후 출력 // printBookList() 실행
 //          =>인자로 selectSortedBook()하여 리턴받은 리스트 객체사용
@@ -43,7 +33,6 @@ public class BookMenu {
 
 // 메뉴 화면 반복 실행 처리
 // 해당 메뉴 번호에 따라 BookManager 클래스 메소드 실행
-
 
         while (true) {
             System.out.println("1. 새 도서 추가");
@@ -68,9 +57,10 @@ public class BookMenu {
 
                 case 3 :
                     // 도서 삭제
-
+                   
                 case 4 :
                     // 도서 검색출력
+
 
 
                 case 5 :
@@ -99,7 +89,7 @@ public class BookMenu {
         System.out.print("도서 번호를 입력하세요 : ");
         int bookNo = sc.nextInt();
         
-        System.out.print("장르 분류 번호를 입력하세요 : ");
+        System.out.print("장르 분류 번호를 입력하세요 (1:인문 / 2:자연과학 / 3:의료 / 4:기타) : ");
         int category = sc.nextInt();
         
         sc.nextLine();
@@ -114,14 +104,18 @@ public class BookMenu {
         bookDTO.setBookName(title);
         bookDTO.setBookAuthor(author);
 
-
-        
+        // 4개의 저장된 값을 리턴
         return bookDTO;
 
     }
 
     public String inputBookNo() {
-        return null;
+        BookDTO bookDTO = new BookDTO();
+        System.out.print("삭제할 도서 번호를 입력하세요 : ");
+        String bookNo = sc.nextLine();
+
+        return bookNo;
+//        삭제할 도서번호를 키보드로 입력 받아 리턴
     }
 
     public String inputBookTitle() {
@@ -131,10 +125,5 @@ public class BookMenu {
     public List<BookDTO> selectSortedBook() {
         return null;
     }
-
-
-
-
-
 
 }
