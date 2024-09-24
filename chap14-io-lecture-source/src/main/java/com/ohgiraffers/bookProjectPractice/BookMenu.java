@@ -1,6 +1,5 @@
-package com.ohgiraffers.practice;
+package com.ohgiraffers.bookProjectPractice;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -54,10 +53,11 @@ public class BookMenu {
 
                 case 2 :
                     // 도서정보 정렬 후 출력
+                    int select = selectSortedBook();
 
                 case 3 :
                     // 도서 삭제
-                   
+
                 case 4 :
                     // 도서 검색출력
 
@@ -122,8 +122,16 @@ public class BookMenu {
         return null;
     }
 
-    public List<BookDTO> selectSortedBook() {
-        return null;
+
+    public int selectSortedBook() {
+
+        System.out.println("정렬방식을 선택해주세요");
+        System.out.println("1번 - 오름차순 정렬");
+        System.out.println("2번 - 내림차순 정렬");
+        System.out.print("메뉴 번호를 선택해주세요 : ");
+        int first = sc.nextInt();
+
+        return first;
     }
 
 }

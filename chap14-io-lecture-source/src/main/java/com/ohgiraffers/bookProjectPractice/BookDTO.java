@@ -1,4 +1,4 @@
-package com.ohgiraffers.practice;
+package com.ohgiraffers.bookProjectPractice;
 
 public class BookDTO {
     // 필드 값 설정

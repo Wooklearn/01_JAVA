@@ -1,4 +1,4 @@
-package com.ohgiraffers.practice;
+package com.ohgiraffers.bookProjectPractice;
 
 public class Application {
 
