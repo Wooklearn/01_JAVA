@@ -51,7 +51,7 @@ public class BookManager {
 
     public void sortedBookList(int num) {
 
-        System.out.print("정렬 전 도서 목록입니다.");
+        System.out.println("정렬 전 도서 목록입니다.");
         displayAll();
 
         printBookList(num);
@@ -67,9 +67,10 @@ public class BookManager {
                     return o1.getBookName().compareTo(o2.getBookName());
                 }
             });
+            System.out.println("=================오름차순 후 정렬==================");
 
-            for (BookDTO bookDTO : booklist) {
-                System.out.println(bookDTO);
+            for (BookDTO bookDTO2 : booklist) {
+                System.out.println(bookDTO2);
             }
 
         } else if (num == 2) {
@@ -79,13 +80,13 @@ public class BookManager {
                     return o2.getBookName().compareTo(o1.getBookName());
                 }
             });
+            System.out.println("=================내림차순 후 정렬==================");
 
-            for (BookDTO bookDTO : booklist) {
-                System.out.println(bookDTO);
+            for (BookDTO bookDTO2 : booklist) {
+                System.out.println(bookDTO2);
             }
 
         }
-
 
     }
 

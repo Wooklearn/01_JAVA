@@ -54,6 +54,7 @@ public class BookMenu {
                 case 2 :
                     // 도서정보 정렬 후 출력
                     int select = selectSortedBook();
+                    bm.sortedBookList(select);
 
                 case 3 :
                     // 도서 삭제
